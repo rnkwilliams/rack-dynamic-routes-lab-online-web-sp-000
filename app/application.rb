@@ -1,5 +1,9 @@
 class Application
   
-  resp
+ def call
+   
+   
+   
+ end
   
 end

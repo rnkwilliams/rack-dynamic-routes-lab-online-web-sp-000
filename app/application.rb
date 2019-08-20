@@ -2,7 +2,7 @@ class Application
   
  def call
    
-   @@items = []
+   @@items = [Item.new("Figs", "3.42"), Item.new("Pears", "0.98"), Item.new("Razor", "8.99")]
    
    resp = Rack::Response.new
    req = Rack::Request.new(env)

@@ -12,7 +12,9 @@ class Application
       song = @@items.find{|i| i.name == item_name}
       resp.write item.price
     else
-      
+      resp.status = 400
+      resp.write  "Item not found"
+    end
       resp.write "Route not found"
       resp.status = 404
  end

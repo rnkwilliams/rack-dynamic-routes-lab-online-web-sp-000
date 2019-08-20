@@ -1,6 +1,6 @@
 class Application
   
- def call
+ def call(env)
    
    @@items = [Item.new("Figs", "3.42"), Item.new("Pears", "0.98"), Item.new("Razor", "8.99")]
    
